@@ -1,0 +1,339 @@
+/* Reset de margen y relleno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #61aae2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #2c3e50;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    display: block;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #34495e;
+    color: #f39c12;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: transparent;
+    border: none;
+    color: #ecf0f1;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.calculadora {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    margin-bottom: 20px;
+}
+      
+.datos {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.datos:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.datos.error {
+    border-color: #dc3545;
+    background-color: #f8d7da;
+}
+
+.button2 {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button2:hover {
+    background-color: #0056b3;
+}
+
+.button2:active {
+    background-color: #004080;
+    transform: scale(0.98);
+}
+
+.label {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.dropbtn:hover {
+    background-color: #34495e;
+    color: #f39c12;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #34495e;
+    color: #f39c12;
+}
+
+section {
+    background-color: #f0eeee;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 850px;
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+    margin: 50px auto;
+}
+
+section h1, section h2, section h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+section .btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+section .btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+a.button {
+    display: inline-block;
+    background-color: #f216e3;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  
+}
+
+a.button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+a.button:disabled {
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+    cursor: not-allowed;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #72b8ed;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+}
+
+footer .social-links {
+    margin: 10px 0;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+footer .contact-info, footer .legal-info {
+    margin: 10px 0;
+}
+
+footer .contact-info p, footer .legal-info p {
+    margin: 5px 0;
+}
+
+.table-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra la tabla horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+}
+
+table {
+    width: 100%; /* Hace que la tabla ocupe el 100% del ancho del contenedor */
+    border-collapse: collapse; /* Combina bordes adyacentes en uno solo */
+    margin: 0 auto; /* Centra la tabla en el contenedor */
+}
+
+th, td {
+    padding: 8px 12px; /* Espaciado interno de las celdas */
+    text-align: left; /* Alineación del texto dentro de las celdas */
+    border: 1px solid #ddd; /* Bordes de las celdas */
+}
+
+th {
+    background-color: #f4f4f4; /* Color de fondo de los encabezados */
+    font-weight: bold; /* Negrita en los encabezados */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo alternante para las filas */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el ratón sobre una fila */
+}
+
+caption {
+    caption-side: top; /* Ubicación del título de la tabla */
+    font-size: 1.5em; /* Tamaño de fuente para el título */
+    margin-bottom: 10px; /* Espacio inferior del título */
+}
+
+.button-container {
+    text-align: center; /* Centra horizontalmente */
+}
+
+.button2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Color de fondo */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Bordes redondeados */
+}
+.tabla-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Hacer que la tabla ocupe solo el ancho necesario */
+.tabla {
+    border-collapse: collapse;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilo de las celdas y bordes de la tabla */
+.tabla th, .tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Encabezado de la tabla */
+.tabla th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #183ee7;
+    color: white;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px; /* Añade un margen superior si lo necesitas */
+}
